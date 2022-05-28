@@ -8,5 +8,5 @@ app.get("/", (req, res) => {
   return res.json(data);
 });
 app.listen(PORT, () => {
-  console.log(`Books server running successfully.`);
+  console.log(`Books server running successfully: http://localhost:${PORT}`);
 });
