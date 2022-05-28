@@ -2,7 +2,7 @@ import express from "express";
 import data from "./data.js";
 
 const app = express();
-const PORT = 5000; //TODO: fix for heroku
+const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
   return res.json(data);
